@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Last element was deleted " + list.removeLast());
         list.display();
         System.out.println("0d element was deleted " + list.remove(0));
-        System.out.println("4d element was deleted " + list.remove(4));
+        System.out.println("1d element was deleted " + list.remove(1));
         list.display();
         System.out.println("The list is empty " + (list.isEmpty() ? "Yes" : "No"));
 

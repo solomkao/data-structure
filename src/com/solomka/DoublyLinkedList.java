@@ -44,14 +44,14 @@ public class DoublyLinkedList<E> {
     public void add(E element, int index) {
         Node<E> current = this.first;
         for (int i = 0; i < index; i++) {
-            if (current.next != null) {
+            if (current != null) {
                 current = current.next;
             } else {
                 System.out.println("There is no such position");
                 return;
             }
         }
-        if (current == null || current == this.first) {
+        if (current == this.first) {
             addFirst(element);
             return;
         }
@@ -107,7 +107,7 @@ public class DoublyLinkedList<E> {
         }
         Node<E> current = this.first;
         for (int i = 0; i < index; i++) {
-            if (current.next != null) {
+            if (current != null) {
                 current = current.next;
             } else {
                 System.out.println("There is no such position");
