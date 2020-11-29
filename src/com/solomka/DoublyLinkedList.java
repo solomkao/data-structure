@@ -47,7 +47,7 @@ public class DoublyLinkedList<E> {
             if (current != null) {
                 current = current.next;
             } else {
-                System.out.println("There is no such position");
+                System.out.println("There is no such position ["+index+"]");
                 return;
             }
         }
@@ -107,13 +107,14 @@ public class DoublyLinkedList<E> {
         }
         Node<E> current = this.first;
         for (int i = 0; i < index; i++) {
-            if (current != null) {
+            if (current.next != null) {
                 current = current.next;
             } else {
-                System.out.println("There is no such position");
+                System.out.println("There is no such position ["+index+"]");
                 return null;
             }
         }
+
         if (current == this.first) {
             return removeFirst();
         }
