@@ -21,7 +21,6 @@ public class MyStack<E> {
         this.head = node;
         this.head.next = oldHead;
         this.size++;
-
     }
 
     public E pop() {

@@ -12,17 +12,17 @@ public class DoublyLinkedList<E> {
     private int size;
 
     public void addFirst(E element) {
-        Node<E> newElement = new Node<>();
-        newElement.data = element;
+        Node<E> node = new Node<>();
+        node.data = element;
         if (isEmpty()) {
-            this.first = newElement;
-            this.last = newElement;
+            this.first = node;
+            this.last = node;
             this.size++;
             return;
         }
-        this.first.prev = newElement;
-        newElement.next = this.first;
-        this.first = newElement;
+        this.first.prev = node;
+        node.next = this.first;
+        this.first = node;
         this.size++;
     }
 
